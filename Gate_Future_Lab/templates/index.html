@@ -1,0 +1,908 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="robots" content="">
+	<meta name="description" content="GATE Future Labs Frontend Bootstrap template">
+	<meta property="og:title" content="GATE Future Labs Frontend Bootstrap template">
+	<meta property="og:description" content="GATE Future Labs Frontend Bootstrap template">
+	<meta property="og:image" content="https://gate.future.com/xhtml/social-image.png">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title -->
+	<title>GATE Future Labs</title>
+
+	<!-- Favicon icon -->
+    <link rel="icon" type="image/png" href="{% static 'assets/images/fav.png' %}">
+
+	<!-- Stylesheet -->
+	<link href="{% static 'assets/vendor/animate/animate.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+	<!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link class="skin" rel="stylesheet" href="{% static 'assets/css/skin/skin-1.css' %}">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body id="bg" data-anm=".anm">
+
+<!--loader start -->
+<div id="loading-area" class="loading-page-1">
+	<div class="loader">
+		<div class="loading-dot"></div>
+	</div>
+</div>
+<!--loader start -->
+
+<div class="page-wraper">
+
+	<!-- Header -->
+	<header class="site-header mo-left header header-transparent">
+		<!-- Main Header -->
+		<div class="sticky-header main-bar-wraper navbar-expand-lg">
+			<div class="main-bar clearfix ">
+				<div class="container clearfix">
+
+					<!-- Website Logo -->
+					<div class="logo-header">
+						<a href="index.html" class="logo-light"><img src="{% static 'assets/images/gat.png' %}" alt=""></a>
+						<a href="index.html" class="logo-dark"><img src="{% static 'assets/images/logo-white-9.png' %}" alt=""></a>
+					</div>
+
+					<!-- Nav Toggle Button -->
+					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+					<!-- Extra Nav -->
+					<div class="extra-nav">
+						<div class="extra-cell">
+							<a class="btn btn-outline-light btn-lg text-light" target="_blank" href="https://zenix.dexignzone.com/xhtml/page-login.html">Login</a>
+							<a class="btn btn-primary btn-lg btn-shadow" target="_blank" href="https://zenix.dexignzone.com/xhtml/page-register.html">Register</a>
+						</div>
+					</div>
+
+					<!-- Header Nav -->
+					<div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+						<div class="logo-header">
+							<a href="index.html" class="logo-dark"><img src="{% static 'assets/images/logo.png' %}" alt=""></a>
+						</div>
+						<ul class="nav navbar-nav navbar navbar-left">
+							<li><a style="color:#9b9b9b;"  href="index.html">Home</a></li>
+							<li><a style="color:#9b9b9b;" href="{% url 'about' %}">About Us</a></li>
+							<li><a style="color:#9b9b9b;" href="pricing.html">Pricing</a></li>
+							<li class="sub-menu-down"><a style="color:#9b9b9b;  href=">Blog</a>
+								<ul class="sub-menu">
+									<li><a style="color:#9b9b9b;" href="blog-list.html">Blog List</a></li>
+									<li><a style="color:#9b9b9b;" href="blog-grid.html">Blog Grid</a></li>
+									<li><a style="color:#9b9b9b;" href="blog-details.html">Blog Details</a></li>
+								</ul>
+							</li>
+							<li><a style="color:#9b9b9b;" href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main Header End -->
+	</header>
+	<!-- Header End -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=3">
+	<style>
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: absolute;
+  top: 59%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+<div class="page-content">
+
+<div class="container">
+  <img src="{% static 'assets/images/bnrg11.png' %}">
+	<div style="color:#grey;" class="centered"><h1>GATE FUTURE LABS</h1></div>
+	<div style="color:#9b9b9b;" class="centered1"><h9>Gate Trader is a NSE India Option Trading platform <br> that provides 100% automated trading algorithms<br> that deploys multiple trading strategies <br> for NIFTY and Bank Nifty Index options.</h9></div>
+
+</div>
+	<br>
+	<br>
+	<div class="crypto-wrapper overflow-hidden">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 m-b30">
+						<div class="crypto-box style-1 wow fadeInUp px-0 pb-0" data-wow-delay="1.2s">
+							<div class="caart-box">
+								<div class="d-flex align-items-center justify-content-between caart-box-1">
+									<div class="crypto-info">
+										<h5>31,056.83</h5>
+										<div class="text">BTC/BUSD+2.98%</div>
+									</div>
+									<div class="crypto-media">
+										<img src="{% static 'assets/images/coins/coin1.png' %}" alt="">
+									</div>
+								</div>
+								<div id="apexChartsOne"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 m-b30">
+						<div class="crypto-box style-1 wow fadeInUp px-0 pb-0" data-wow-delay="1.4s">
+							<div class="caart-box">
+								<div class="d-flex align-items-center justify-content-between caart-box-1">
+									<div class="crypto-info">
+										<h5>63,056.83</h5>
+										<div class="text">ETH/BUSD+0.98%</div>
+									</div>
+									<div class="crypto-media">
+										<img src="{% static 'assets/images/coins/coin2.png' %}" alt="">
+									</div>
+								</div>
+								<div id="apexChartstwo"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 m-b30">
+						<div class="crypto-box style-1 wow fadeInUp px-0 pb-0" data-wow-delay="1.6s">
+							<div class="caart-box">
+								<div class="d-flex align-items-center justify-content-between caart-box-1">
+									<div class="crypto-info">
+										<h5>20,056.83</h5>
+										<div class="text">USD/BUSD+0.84%</div>
+									</div>
+									<div class="crypto-media">
+										<img src="{% static 'assets/images/coins/coin3.png' %}" alt="">
+									</div>
+								</div>
+								<div id="apexChartsthree"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6  m-b30">
+						<div class="crypto-box style-1 wow fadeInUp px-0 pb-0" data-wow-delay="1.8s">
+							<div class="caart-box">
+								<div class="d-flex align-items-center justify-content-between caart-box-1">
+									<div class="crypto-info">
+										<h5>11,056.83</h5>
+										<div class="text">USDT/BUSD+1.88%</div>
+									</div>
+									<div class="crypto-media">
+										<img src="{% static 'assets/images/coins/coin4.png' %}" alt="">
+									</div>
+								</div>
+								<div id="apexChartsfour"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<br>
+	<section class="content-inner overflow-hidden position-relative">
+
+			<div class="container">
+				<div class="section-head text-center">
+					<h2 class="title wow fadeInUp" data-wow-delay="0.6s">Our Intelligence is with Success Tri-Mantra</h2>
+					<p class="text wow fadeInUp" data-wow-delay="0.8s"></p>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-6 m-b30">
+						<div class="icon-bx-wraper style-1 bg-grey box-hover text-center wow bounceInLeft" data-wow-delay="1.0s" >
+							<div class="icon-media">
+								<i class="flaticon-coin-stack"></i>
+							</div>
+							<div class="icon-content">
+								<h4 class="title">Domain Knowledge</h4>
+								<p class="text"></p>
+							</div>
+							<div class="hover-border"></div>
+							<div class="hover-border-2"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 m-b30">
+						<div class="icon-bx-wraper style-1 box-hover bg-grey active text-center wow bounceInUp center" data-wow-delay="1.2s" >
+							<div class="icon-media">
+								<i class="flaticon-transaction"></i>
+							</div>
+							<div class="icon-content">
+								<h4 class="title">Technology Expertise</h4>
+								<p class="text"></p>
+							</div>
+							<div class="hover-border"></div>
+							<div class="hover-border-2"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 m-b30">
+						<div class="icon-bx-wraper style-1 box-hover bg-grey text-center wow bounceInRight" data-wow-delay="1.0s" >
+							<div class="icon-media">
+								<i class="flaticon-shield"></i>
+							</div>
+							<div class="icon-content">
+								<h4 class="title">Value Innovation</h4>
+								<p class="text"></p>
+							</div>
+							<div class="hover-border"></div>
+							<div class="hover-border-2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+		</section>
+
+		<section class="content-inner bg-grey position-relative overflow-hidden">
+			<div class="container">
+				<div class="row align-items-top">
+					<div class="col-lg-5 m-b30 ">
+						<div class="dz-media style-1  wow bounceInLeft" data-wow-delay="0.4s">
+							<img src="{% static 'assets/images/about/pic1.gif' %}" alt="image" class="rounded">
+						</div>
+					</div>
+					<br>
+					<br>
+					<div class="col-lg-6 m-b30">
+						<div class="section-head">
+							<h2 class="title wow fadeInUp" data-wow-delay="0.6s">Our Live Dream Project</h2><BR>
+							<p style="color:#9b9b9b;" class="text wow fadeInUp" data-wow-delay="0.8s">Utillising Mixed reality,we are coming up with products and projects that will have realities ranging from real world objects to Extra Sensory Preception Experince ssages of Lorem Ipsum but the majority have suffered alteration in some form, by humour, to be sure there hidden  in the middle of text.</p>
+						</div>
+						<div class="row justify-content-center text-lg-start text-md-center text-center">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-6 col m-b30 wow fadeInUp" data-wow-delay="1.0s">
+								<div class="counter-style-2 ">
+									<h3 class="counter-number text-primary"><span class="counter">20</span>M</h3>
+									<p  style="color:black;" class="counter-text m-b0">Customers</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-6 m-b30 wow fadeInUp" data-wow-delay="1.2s">
+								<div class="counter-style-2 ">
+									<h3 class="counter-number text-primary"><span class="counter">100</span>%</h3>
+									<p style="color:black;" class="counter-text m-b0">Take Launches</p>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-6  m-b30 wow fadeInUp" data-wow-delay="1.4s">
+								<div class="counter-style-2 ">
+									<h3 class="counter-number text-primary"><span class="counter">24</span>/7</h3>
+									<p style="color:black;" class="counter-text m-b0">Operators</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<div class="crypto-box style-2 wow bounceInRight" data-wow-delay="1.6s">
+									<div class="crypto-info">
+										<i class="flaticon-checked"></i>
+										<h6 class="title">Solid Varirty Of Altcoin Choices</h6>
+									</div>
+									<div class="crypto-text">
+										<p class="text">All the Lorem Ipsum generators on the Internet tend to repeat redefined </p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<div class="crypto-box style-2  wow bounceInRight" data-wow-delay="1.8s">
+									<div class="crypto-info">
+										<i class="flaticon-checked"></i>
+										<h6 class="title">Extremely Simple  User Interface</h6>
+									</div>
+									<div class="crypto-text">
+										<p class="text">All the Lorem Ipsum generators on the Internet tend to repeat redefined </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+		</section>
+
+				<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+        <br>
+		<br>
+		<br>
+
+		<section class="content-inner-1 bg-grey position-relative">
+			<h1 style="text-align:center;">Gate Products</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12 m-b30">
+						<div class="contant-box style-2 bg-light-purple">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="crypto-box style-3 wow fadeInUp" data-wow-delay="0.2s">
+										<div class="d-flex align-items-center">
+											<div class="crypto-media">
+												<img src="assets/images/coins/coin5.png" alt="">
+											</div>
+											<div class="crypto-info">
+												<h4>Mind Technology</h4>
+												<div class="text">A Brainwave Detection System is a technology designed to monitor and record the electrical activity in the human brain, known as brainwaves. This system typically utilizes electroencephalography (EEG) to detect and analyze these electrical signals. Here are some key points about Brainwave Detection Systems. <br>Electroencephalography (EEG): EEG is the primary method used in Brainwave Detection Systems. It involves placing electrodes on the scalp to measure the electrical activity generated by neurons in the brain. These electrical signals are then amplified, filtered, and recorded for analysis.<BR>
+                                                 Brainwave Types: Brainwave activity is categorized into different frequency bands, including delta, theta, alpha, beta, and gamma waves. Each of these wave types is associated with specific mental states and activities. For example, delta waves are linked to deep sleep, while beta waves are associated with alertness and active thinking. <br>All the Lorem Ipsum generators on the Internet tend to repeat redefined.All the Lorem Ipsum.All the Lorem Ipsum generators on the Internet tend to repeat redefined</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 m-b30">
+								<div class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="1.8s">
+									<div class="contant-box">
+										<div class="crypto-info">
+											<div>
+												<h5>Virtual Headset</h5>
+
+											</div>
+											<div class="crypto-price">
+
+											</div>
+										</div>
+										<div>
+											<img src="{% static 'assets/images/vr1.jpg' %}" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 m-b30">
+								<div class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="2.0s">
+									<div class="contant-box">
+										<div class="crypto-info">
+											<div>
+												<h5 class="text-purple">VR Headset</h5>
+
+											</div>
+										</div>
+
+										<div>
+											<img src="{% static 'assets/images/vr2.jpg' %}" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="overlay-box style-1 bg-light-purple wow fadeInUp" data-wow-delay="2.0s">
+											<img src="{% static 'assets/images/vr5.png' %}" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+			</div>
+				<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+<br>
+	<br>
+
+		<section class="">
+			<footer class="site-footer style-1 position-relative">
+		<div class="footer-top overlay-dark-dark" style="background-image:url('assets/images/banner/bnr1.jpg');">
+			<div class="container">
+				<div class="footer-subscribe-wrapper">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							</div>
+						</div>
+			<div class="container">
+				<div class="section-head text-center">
+					<h2 style="color:#080808;" data-wow-delay="0.6s">Gate Future Labs <br>Value Innovation Framework<br><br></h2>
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="0.8s" >
+							<div class="icon-media">
+								 <img src="{% static 'assets/images/img1.jpg' %}">
+							</div>
+							<div class="icon-content">
+								<h6 class="title">Blue Ocean Strategy</h6>
+								<br>
+								<h6 class="title">Our business approach that emphasizes creating uncontested market spaces rather than competing in existing ones. It encourages companies to break away from traditional competition and create new demand by offering unique value propositions</h6>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.0s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/img2.jpg' %}">
+							</div>
+							<div class="icon-content">
+								<h6 class="title">AL / ML</h6>
+								<br>
+								<h6 class="title">Artificial Intelligence and Machine Learning are advanced technologies that enable computers to perform tasks and learn from data, making them integral in various fields, from healthcare to finance and brainwave mapping to Cinemas.In essence, ML is a key component of AI</h6>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.2s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/img3.jpg' %}">
+							</div>
+							<div class="icon-content">
+								<h6 class="title">Value Innovation</h6>
+								<br>
+								<h6 class="title">Our strategic concept focused on creating innovative products or services that simultaneously increase value for customers while reducing costs for businesses. It can be a powerful strategy for businesses to break away from crowded and highly Competitive</h6>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+						<div class="icon-bx-wraper style-2 text-center wow fadeInUp" data-wow-delay="1.4s" >
+							<div class="icon-media">
+								<img src="{% static 'assets/images/img4.jpg' %}">
+							</div>
+							<div class="icon-content">
+								<h6 class="title">Customer Satisfaction</h6>
+								<br>
+								<h6 class="title">We commit to achieving the highest level of contentment and delight among customers, where their needs, expectations, and desires, resulting in long-term loyalty and advocacy for a product.loyal customer relationships and enjoying positive reputations</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+				<ul class="dz-shape-2">
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+						<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+						<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+					</svg>
+				</li>
+				<li>
+					<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+						<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+						<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+						<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+					</svg>
+				</li>
+			</ul>
+			</div>
+				</div>
+			</div>
+		</div>
+			</footer>
+		</section>
+
+
+		<section class="content-inner-3 overflow-hidden position-relative">
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Gate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Gate Future Labs</h2>
+
+<div class="w3-content w3-section" style="max-width:1110px">
+  <img class="mySlides" src="{% static 'assets/images/ss.png' %}" style="width:100%">
+  <img class="mySlides" src="{% static 'assets/images/ss2.png' %}" style="width:100%">
+  <img class="mySlides" src="{% static 'assets/images/ss3.png' %}" style="width:100%">
+
+</div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 5 seconds
+}
+</script>
+
+</body>
+</html>
+		</section>
+
+
+
+	<!-- Footer -->
+    <footer class="site-footer style-1 position-relative">
+		<div class="footer-top overlay-dark-dark" style="background-image:url('assets/images/banner/bnr1.jpg');">
+			<div class="container">
+				<div class="footer-subscribe-wrapper">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="widget wow fadeInUp" data-wow-delay="0.4s">
+								<div class="footer-logo">
+									<a href="index.html" class="logo-light"><img src="{% static 'assets/images/gat1.png' %}" alt=""></a>
+								</div>
+								<p style="color:#9b9b9b;">GATE FUTURE LABS PVT LTD is a rapidly growing best-in-class Value Innovation company.</p>
+
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="widget  wow fadeInUp" data-wow-delay="0.6s">
+								<h4 style="color:#9b9b9b ">Subscribe To Our Newsletter</h4>
+								<form class="dzSubscribe ft-subscribe mb-4" action="assets/script/mailchamp.php" method="post">
+									<div class="dzSubscribeMsg"></div>
+									<div class="input-group mb-0">
+										<input  name="dzEmail" required="required" type="email" class="form-control" placeholder="Your Email Address">
+										<button name="submit" value="Submit" type="submit" class="btn btn-primary style-2 text-primary two"><i class="fa-regular fa-paper-plane"></i></button>
+										<button name="submit" value="Submit" type="submit" class="btn btn-primary style-2 text-primary">Subscribe</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row p-50">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="widget wow fadeInUp" data-wow-delay="0.8s">
+							<h4 style="color:#9b9b9b;">Contact</h4>
+							<div class="widget_getintuch">
+								<ul>
+									<li style="color:#9b9b9b;">
+										<i></i>
+										1247/Plot No. 39, 15th Phase,<br>
+										Colony, Kkatpally, Hyderabad
+									</li>
+
+									<li style="color:#9b9b9b;">
+										<i></i>
+										+91 987-654-3210<br>
+										+91 123-456-7890
+									</li>
+
+									<li style="color:#9b9b9b;">
+										<i></i>
+										info@example.com
+										info@example.com
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.0s">
+							<h4 style="color:#9b9b9b;">Our links</h4>
+							<ul>
+								<li><a style="color:#9b9b9b;" href="index.html">Home</a></li>
+								<li><a style="color:#9b9b9b;" href="about-us.html">About Us </a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Services</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Team</a></li>
+								<li><a style="color:#9b9b9b;" href="blog-details.html">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.2s">
+							<h4 style="color:#9b9b9b;">Our services</h4>
+							<ul>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Strategy & Research</a></li>
+								<li><a style="color:#9b9b9b;"href="javascript:void(0);">Web Development</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Web Solution</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Digital Marketing</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">App Design</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-6">
+						<div class="widget widget_links wow fadeInUp" data-wow-delay="1.4s">
+							<h4 style="color:#9b9b9b;" class="footer-title">Other links</h4>
+							<ul>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">FAQ</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Portfolio</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Privacy Policy</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Terms & Condition</a></li>
+								<li><a style="color:#9b9b9b;" href="javascript:void(0);">Support</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom text-md-center text-md-center">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-md-12">
+						<div class="footer-inner text-lg-start text-center ">
+							<p class="copyright-text wow fadeInUp" data-wow-delay="1.6s">Copyright 2023 by <a class="text-primary" href="https://dexignzone.com/" target="_blank">GateTraders</a>. All rights Reserved</p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12">
+						<div class="footer-inner text-lg-end  text-center">
+							<ul class="footer-link wow fadeInUp" data-wow-delay="1.8s">
+								<li><a href="about-us.html">About</a></li>
+								<li><a href="javascript:void(0);">Help Desk</a></li>
+								<li><a href="javascript:void(0);">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="dz-shape-2">
+			<li>
+				<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+					<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+					<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+					<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+				</svg>
+			</li>
+			<li>
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+					<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+				</svg>
+			</li>
+			<li>
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M36.5 0L30 36.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M21 14.5L30 36.5L0 11.5L21 14.5Z" fill="var(--primary-dark)"></path>
+					<path d="M36.5 0L21 14.5L0 11.5L36.5 0Z" fill="var(--primary)"></path>
+					<path d="M36.5 0L30 36.5L21 14.5L36.5 0Z" fill="var(--primary-hover)"></path>
+				</svg>
+			</li>
+			<li>
+				<svg width="50" height="50" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M41 0L65.5 14L63.5 59L23.5 66.5L0 52L1.5 7.5L41 0Z" fill="var(--primary)"></path>
+					<path d="M1.5 7.5L25.5 21.5L23.5 66.5L0 52L1.5 7.5Z" fill="var(--primary-dark)"></path>
+					<path d="M1.5 7.5L41 0L65.5 14L25.5 21.5L1.5 7.5Z" fill="var(--primary-hover)"></path>
+					<path d="M25.5 21.5L65.5 14L63.5 59L23.5 66.5L25.5 21.5Z" fill="var(--primary)"></path>
+				</svg>
+			</li>
+		</ul>
+	</footer>
+
+    <!-- Footer End -->
+
+	<button class="scroltop icon-up" type="button"><i class="fas fa-arrow-up"></i></button>
+</div>
+<!-- JAVASCRIPT FILES ========================================= -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'assets/js/anm.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'assets/vendor/wow/wow.js' %}"></script><!-- WOW.JS -->
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script><!-- OWL silder -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script><!-- WOW.JS -->
+<script src="{% static 'assets/vendor/counter/waypoints-min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'assets/vendor/counter/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'assets/vendor/magnific-popup/magnific-popup.js' %}"></script><!-- OWL SLIDER -->
+<script src="{% static 'assets/js/dz.carousel.js' %}"></script><!-- OWL SLIDER -->
+<script src="{% static 'assets/vendor/apexchart/js/apexcharts.min.js' %}"></script><!-- OWL SLIDER -->
+<script src="{% static 'assets/js/dz.ajax.js' %}"></script><!-- AJAX -->
+<script src="{% static 'assets/js/chart-init.js' %}"></script><!-- Chart Init -->
+<script src="{% static 'assets/js/custom.js' %}"></script><!-- CUSTOM JS -->
+</body>
+</html>
+
+{% endblock content %}
